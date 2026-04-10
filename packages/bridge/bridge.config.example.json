@@ -1,0 +1,45 @@
+{
+  "_comment": "Copy this file to bridge.config.json and fill in your own local keys.",
+  "bridge": {
+    "port": 8765,
+    "host": "0.0.0.0"
+  },
+  "openclaude": {
+    "execPath": "openclaude",
+    "_execPath_windows_example": "C:\\Users\\USER\\openclaude\\openclaude.exe",
+    "defaultProjectPath": "."
+  },
+  "providers": {
+    "nvidia-nim": {
+      "apiKey": "YOUR_NVIDIA_NIM_API_KEY",
+      "model": "meta/llama-3.3-70b-instruct"
+    },
+    "openai": {
+      "apiKey": "YOUR_OPENAI_API_KEY"
+    },
+    "gemini": {
+      "apiKey": "YOUR_GEMINI_API_KEY"
+    },
+    "anthropic": {
+      "apiKey": "YOUR_ANTHROPIC_API_KEY"
+    },
+    "ollama": {
+      "baseURL": "http://localhost:11434/v1"
+    }
+  },
+  "customProviders": {
+    "example_custom": {
+      "name": "My Custom Provider",
+      "baseURL": "https://my-provider.api/v1",
+      "apiKey": "YOUR_CUSTOM_PROVIDER_API_KEY",
+      "models": [
+        {
+          "id": "my-model-v1",
+          "name": "My Model V1",
+          "contextWindow": 32768,
+          "supportsFunctions": true
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,25 @@
+# Bridge — لا ترفع هذه الملفات
+packages/bridge/node_modules/
+packages/bridge/bridge.config.json
+
+# References — مستودعات مرجعية فقط للدراسة
+references/
+
+# Flutter
+.flutter-plugins-dependencies
+apps/mobile/.dart_tool/
+apps/mobile/.flutter-plugins
+apps/mobile/.flutter-plugins-dependencies
+apps/mobile/build/
+apps/mobile/.packages
+
+# Editor / OS
+.idea/
+*.iml
+Thumbs.db
+.DS_Store
+
+# عام
+*.log
+.env
+.env.local
